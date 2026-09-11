@@ -3,7 +3,7 @@ import {createRoot} from 'react-dom/client';
 import {LineChart,Line,CartesianGrid,XAxis,YAxis,Tooltip,ResponsiveContainer,BarChart,Bar} from 'recharts';
 import {Sprout,TrendingUp,Users,Truck,Warehouse,ShieldCheck,PlusCircle,Send,AlertTriangle,IndianRupee,MapPin} from 'lucide-react';
 import './styles.css';
-const API='http://localhost:8000/api';
+const API='https://agrisetu-tejw.onrender.com/api';
 function App(){
  const [tab,setTab]=useState('Dashboard'); const [markets,setMarkets]=useState([]); const [buyers,setBuyers]=useState([]); const [trend,setTrend]=useState({labels:[],prices:[],forecast:[]}); const [rec,setRec]=useState(null); const [lots,setLots]=useState([]); const [msg,setMsg]=useState('');
  const [form,setForm]=useState({crop:'Onion',quantity_kg:500,location:'Dhule',quality:'Grade A',harvest_date:'2026-09-10',farmer:'Demo Farmer'});
